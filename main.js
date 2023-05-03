@@ -13,7 +13,7 @@ DataService.getFacts().then(data=>{
 })
 
 function displayData(data){
-  const list = document.getElementById('facts-list');
+  const list = document.getElementById('fact-list');
   for (const factObj of data) {
     list.innerHTML += `<li>${factObj.fact}</li>`    
   }
